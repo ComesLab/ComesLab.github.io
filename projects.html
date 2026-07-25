@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Progetti di Attilio Comes / ComesLab: Anode Manager, Navis3 Invoice Automation, Marina Platform e altre web app Python, Flask e SQL Server." />
+  <meta name="author" content="Attilio Comes" />
+  <meta name="keywords" content="Attilio Comes, ComesLab, progetti Python, Flask, SQL Server, Navis3, Anode Manager, Marina Platform, automation, Rodi Garganico" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="theme-color" content="#080d18" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#f5f7fa" media="(prefers-color-scheme: light)" />
+  <title>Progetti Python, Flask e Automation — Attilio Comes | ComesLab</title>
+
+  <!-- Favicon / icone -->
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://comeslab.github.io/projects.html" />
+  <meta property="og:title"       content="Progetti · ComesLab — Attilio Comes" />
+  <meta property="og:description" content="Anode Manager, Navis3 Invoice Automation, Marina Platform — tutti i progetti Python e Flask di Attilio Comes." />
+  <meta property="og:image"       content="https://comeslab.github.io/image/og-preview.jpg" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type"  content="image/jpeg" />
+  <meta property="og:image:alt"   content="Attilio Comes — Python Developer & Automation Specialist, ComesLab" />
+  <meta property="og:locale"      content="it_IT" />
+  <meta property="og:site_name"   content="ComesLab" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Progetti · ComesLab — Attilio Comes" />
+  <meta name="twitter:description" content="Anode Manager, Navis3 Invoice Automation, Marina Platform — tutti i progetti Python e Flask di Attilio Comes." />
+  <meta name="twitter:image"       content="https://comeslab.github.io/image/og-preview.jpg" />
+  <meta name="twitter:image:alt"   content="Attilio Comes — Python Developer & Automation Specialist, ComesLab" />
+
+  <link rel="canonical" href="https://comeslab.github.io/projects.html" />
+
+  <!-- Structured data — CollectionPage + elenco progetti -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://comeslab.github.io/projects.html#page",
+    "url": "https://comeslab.github.io/projects.html",
+    "name": "Progetti · ComesLab",
+    "description": "Progetti Python, Flask e automation sviluppati da Attilio Comes.",
+    "inLanguage": "it",
+    "isPartOf": { "@id": "https://comeslab.github.io/#website" },
+    "author": { "@id": "https://comeslab.github.io/#person" },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://comeslab.github.io/" },
+        { "@type": "ListItem", "position": 2, "name": "Progetti", "item": "https://comeslab.github.io/projects.html" }
+      ]
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "numberOfItems": 5,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Anode Manager",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web",
+            "description": "Flask web app per il tracciamento degli anodi sacrificali sulla flotta della Marina di Rodi Garganico, con backend Google Sheets via Service Account.",
+            "url": "https://github.com/Aktarus70/anodi-flotta",
+            "author": { "@id": "https://comeslab.github.io/#person" }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Navis3 Invoice Automation",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Windows",
+            "description": "Applicazione desktop Python/tkinter per l'inserimento massivo di fatture nel DB Navis3 su SQL Server, con parsing PDF e anti-duplicazione SHA-256.",
+            "author": { "@id": "https://comeslab.github.io/#person" }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Marina Platform",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web",
+            "description": "Piattaforma Flask modulare in sviluppo per sostituire le app desktop della marina: Bootstrap 5, HTMx, Flask-Login, pyodbc.",
+            "author": { "@id": "https://comeslab.github.io/#person" }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Marina del Sole",
+            "applicationCategory": "WebApplication",
+            "operatingSystem": "Web",
+            "description": "Sito web statico per il turismo nautico in HTML, CSS e JavaScript puro, ottimizzato per le performance e deployato su Vercel.",
+            "author": { "@id": "https://comeslab.github.io/#person" }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Navis3 Quote App",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Windows",
+            "description": "Applicazione desktop Python/tkinter per preventivi, check-in/out e contratti di locazione dei 579 posti barca della marina, integrata con il DB Navis3 via pyodbc.",
+            "author": { "@id": "https://comeslab.github.io/#person" }
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ── Projects page extras ─────────────────────────────────── */
+    .proj-hero {
+      min-height: 38vh;
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: var(--sp-8);
+      padding-top: calc(var(--nav-height) + var(--sp-8));
+      position: relative;
+      overflow: hidden;
+      background: var(--clr-bg-base);
+    }
+    .proj-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 70% 50%, rgba(0,212,255,0.07) 0%, transparent 60%);
+    }
+    .proj-hero__inner { position: relative; z-index: 1; }
+    .proj-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--clr-text-muted);
+      margin-bottom: var(--sp-3);
+      transition: color var(--tr-fast);
+    }
+    .proj-back:hover { color: var(--clr-accent-blue); }
+    .proj-back:focus-visible {
+      outline: 2px solid var(--clr-accent-blue);
+      outline-offset: 3px;
+      border-radius: 3px;
+    }
+
+    .all-projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: var(--sp-4);
+      padding-block: var(--sp-10);
+    }
+
+    .coming-soon-strip {
+      border: 1px dashed var(--clr-border);
+      border-radius: var(--r-lg);
+      padding: var(--sp-8);
+      text-align: center;
+      margin-top: var(--sp-4);
+      background: var(--clr-bg-card);
+    }
+    .coming-soon-strip p {
+      color: var(--clr-text-muted);
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      margin-top: var(--sp-2);
+    }
+
+    @media (max-width: 640px) {
+      .all-projects-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <button class="back-to-top" aria-label="Torna in cima" id="backToTop">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+      <path d="M10 15V5M5 10l5-5 5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar" role="banner">
+    <nav class="navbar__inner" aria-label="Navigazione principale">
+      <a class="navbar__logo" href="index.html#hero" aria-label="ComesLab — home">
+        <span class="navbar__logo-bracket">[</span>ComesLab<span class="navbar__logo-bracket">]</span>
+      </a>
+      <ul class="navbar__links" id="navLinks" role="list">
+        <li><a class="navbar__link" href="index.html#about">About</a></li>
+        <li><a class="navbar__link" href="index.html#skills">Skills</a></li>
+        <li><a class="navbar__link is-active" href="projects.html">Projects</a></li>
+        <li><a class="navbar__link" href="index.html#lab">Lab</a></li>
+        <li><a class="navbar__link" href="index.html#certifications">Cert.</a></li>
+        <li><a class="navbar__link" href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="navbar__controls">
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambia tema">
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <button class="navbar__hamburger" id="hamburger" aria-label="Apri menu" aria-expanded="false" aria-controls="navLinks">
+          <span class="navbar__hamburger-line"></span>
+          <span class="navbar__hamburger-line"></span>
+          <span class="navbar__hamburger-line"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="proj-hero" aria-label="Projects header">
+      <div class="container proj-hero__inner">
+        <a class="proj-back" href="index.html">← back to home</a>
+        <p class="section-label mono">// web projects &amp; apps</p>
+        <h1 class="section-heading" style="margin-bottom:0">Tutto quello che ho costruito.</h1>
+      </div>
+    </section>
+
+    <!-- PROJECTS GRID -->
+    <section aria-label="Tutti i progetti" style="background:var(--clr-bg-surface)">
+      <div class="container">
+        <div class="all-projects-grid">
+
+          <!-- Anode Manager -->
+          <article class="card--project reveal">
+            <div class="card--project__image-wrap">
+              <div class="card--project__image skeleton">
+                <div class="card--project__image-label mono">anodi-flotta · render.com</div>
+              </div>
+              <span class="card--project__badge">Live</span>
+            </div>
+            <div class="card--project__body">
+              <h2 class="card--project__title">Anode Manager</h2>
+              <p class="card--project__desc">
+                Flask web app per il tracciamento degli anodi sacrificali su tutta la flotta della Marina di Rodi Garganico. 
+                Gestione completa del ciclo di vita di ogni anodo (codice, barca, data sostituzione, stato). 
+                Backend Google Sheets via Service Account, autocomplete con navigazione da tastiera, 
+                batch API calls per evitare rate limits. Deploy su Vercel.
+              </p>
+              <div class="card--project__tags">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Flask</span>
+                <span class="skill-tag">Google Sheets API</span>
+                <span class="skill-tag">Service Account</span>
+                <span class="skill-tag">Vercel</span>
+                <span class="skill-tag">Render</span>
+              </div>
+              <div class="card--project__actions">
+                <a class="btn btn--ghost btn--sm" href="https://github.com/Aktarus70/anodi-flotta" target="_blank" rel="noopener">GitHub →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Fatture Navis3 -->
+          <article class="card--project reveal reveal--delay-1">
+            <div class="card--project__image-wrap">
+              <div class="card--project__image skeleton">
+                <div class="card--project__image-label mono">fatture-navis3-v4.py</div>
+              </div>
+              <span class="card--project__badge card--project__badge--amber">v4.0</span>
+            </div>
+            <div class="card--project__body">
+              <h2 class="card--project__title">Navis3 Invoice Automation</h2>
+              <p class="card--project__desc">
+                Desktop Python/tkinter a 7 tab per l'inserimento massivo di fatture nel DB Navis3 (SQL Server). 
+                Integrazione contabile completa (DocumentMaster, DocumentDetail, MovMaster). 
+                Parsing PDF con Gemini API, anti-duplicazione SHA-256, logica fiscale TD04 per note di credito. 
+                Gestione SCOPE_IDENTITY e trigger SQL Server.
+              </p>
+              <div class="card--project__tags">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">tkinter</span>
+                <span class="skill-tag">SQL Server</span>
+                <span class="skill-tag">pyodbc</span>
+                <span class="skill-tag">Gemini API</span>
+                <span class="skill-tag">Navis3 ERP</span>
+              </div>
+              <div class="card--project__actions">
+                <a class="btn btn--ghost btn--sm" href="https://github.com/ComesLab" target="_blank" rel="noopener">GitHub →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Marina Platform -->
+          <article class="card--project card--project--locked reveal reveal--delay-2">
+            <div class="card--project__image-wrap">
+              <div class="card--project__image card--project__image--dark">
+                <div class="card--project__lock">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                    <rect x="3" y="11" width="18" height="11" rx="2" stroke="var(--clr-accent-blue)" stroke-width="1.8"/>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="var(--clr-accent-blue)" stroke-width="1.8" stroke-linecap="round"/>
+                    <circle cx="12" cy="16" r="1.5" fill="var(--clr-accent-blue)"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="card--project__body">
+              <h2 class="card--project__title">Marina Platform</h2>
+              <p class="card--project__desc">
+                Piattaforma Flask unificata in sviluppo attivo per sostituire tutte le app desktop della marina. 
+                Bootstrap 5, HTMx, Flask-Login, pyodbc. Architettura modulare con il modulo Magazzino come 
+                prima implementazione di riferimento.
+              </p>
+              <div class="card--project__tags">
+                <span class="skill-tag">Flask</span>
+                <span class="skill-tag">HTMx</span>
+                <span class="skill-tag">Bootstrap 5</span>
+                <span class="skill-tag">Flask-Login</span>
+                <span class="skill-tag">pyodbc</span>
+              </div>
+              <div class="card--project__actions">
+                <span class="btn btn--ghost btn--sm btn--disabled">In Progress</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Marina del Sole -->
+          <article class="card--project reveal">
+            <div class="card--project__image-wrap">
+              <div class="card--project__image skeleton">
+                <div class="card--project__image-label mono">marina-del-sole · vercel.app</div>
+              </div>
+              <span class="card--project__badge">Live</span>
+            </div>
+            <div class="card--project__body">
+              <h2 class="card--project__title">Marina del Sole</h2>
+              <p class="card--project__desc">
+                Sito web statico di lusso per il turismo nautico. 
+                HTML/CSS/JS puro, ottimizzato per performance, deployato su Vercel 
+                tramite l'organizzazione ComesLab su GitHub. Cache-headers aggressivi via vercel.json.
+              </p>
+              <div class="card--project__tags">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Vercel</span>
+                <span class="skill-tag">Static site</span>
+              </div>
+              <div class="card--project__actions">
+                <a class="btn btn--ghost btn--sm" href="https://github.com/ComesLab" target="_blank" rel="noopener">GitHub →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- navis3_quote_app -->
+          <article class="card--project reveal reveal--delay-1">
+            <div class="card--project__image-wrap">
+              <div class="card--project__image skeleton">
+                <div class="card--project__image-label mono">navis3_quote_app.py</div>
+              </div>
+              <span class="card--project__badge card--project__badge--amber">desktop</span>
+            </div>
+            <div class="card--project__body">
+              <h2 class="card--project__title">Navis3 Quote App</h2>
+              <p class="card--project__desc">
+                App Python/tkinter a 7 tab per preventivi, check-in/out e contratti di locazione 
+                per i 579 posti barca della marina (ormeggi, parcheggi, spazi commerciali). 
+                Integrazione diretta con il DB Navis3 via pyodbc.
+              </p>
+              <div class="card--project__tags">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">tkinter</span>
+                <span class="skill-tag">SQL Server</span>
+                <span class="skill-tag">pyodbc</span>
+                <span class="skill-tag">Navis3</span>
+              </div>
+              <div class="card--project__actions">
+                <a class="btn btn--ghost btn--sm" href="https://github.com/ComesLab" target="_blank" rel="noopener">GitHub →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Coming soon placeholder -->
+          <article class="card--project card--project--locked reveal reveal--delay-2">
+            <div class="card--project__image-wrap">
+              <div class="card--project__image card--project__image--dark">
+                <div class="card--project__lock">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="var(--clr-text-muted)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="card--project__body">
+              <h2 class="card--project__title">Next Project</h2>
+              <p class="card--project__desc">Lavori in corso. Torna presto per vedere il prossimo progetto.</p>
+              <div class="card--project__tags">
+                <span class="skill-tag">???</span>
+              </div>
+              <div class="card--project__actions">
+                <span class="btn btn--ghost btn--sm btn--disabled">Coming Soon</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="coming-soon-strip reveal">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" stroke="var(--clr-text-muted)" stroke-width="1.5" fill="none" stroke-dasharray="3 2"/>
+          </svg>
+          <p>Nuovi progetti in arrivo — <a href="index.html#contact" style="color:var(--clr-accent-blue)">contattami</a> per collaborazioni.</p>
+        </div>
+
+        <div style="padding-bottom:var(--sp-10); text-align:center; margin-top:var(--sp-6);">
+          <a class="btn btn--ghost" href="index.html">← Torna alla home</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__copy mono">© 2025 Attilio Comes · ComesLab · Rodi Garganico, Puglia</p>
+        <div class="footer__socials">
+          <a class="footer__social-link" href="https://github.com/ComesLab" target="_blank" rel="noopener" aria-label="GitHub ComesLab">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a class="footer__social-link" href="https://www.linkedin.com/in/attilio-comes" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="1.8" fill="none"/>
+              <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="1.8" fill="none"/>
+              <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="1.8" fill="none"/>
+            </svg>
+          </a>
+          <a class="footer__social-link" href="mailto:comeslab@gmail.com" aria-label="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.8" fill="none"/>
+              <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="1.8"/>
+            </svg>
+          </a>
+        </div>
+        <p class="footer__dev mono">dev · Attilio Comes</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js" type="module"></script>
+</body>
+</html>
