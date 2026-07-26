@@ -4,8 +4,5 @@
 User-agent: *
 Allow: /
 
-# Study / exercise pages — keep them out of the index
-Disallow: /esercizio-canvas.html
-
 # Point search engines to the sitemap
 Sitemap: https://comeslab.github.io/sitemap.xml

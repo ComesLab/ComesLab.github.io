@@ -11,3 +11,14 @@ Desktop.ini
 *.log
 *.tmp
 *~
+
+# Documentazione interna — non pubblicata
+CLAUDE.md
+SITE_BLUEPRINT.md
+DEPLOY.md
+
+# Pagine di studio / esercizi
+esercizio-canvas.html
+
+# Asset non usati dal sito
+image/Attilio Comes1.jpg
