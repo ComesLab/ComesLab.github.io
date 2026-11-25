@@ -904,7 +904,7 @@ button { cursor: pointer; font-family: inherit; }
 }
 .card--project__badge {
   position: absolute;
-  top: var(--sp-2);
+  bottom: var(--sp-2);
   right: var(--sp-2);
   padding: 0.15em 0.6em;
   background: rgba(0, 212, 255, 0.15);
